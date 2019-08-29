@@ -1,0 +1,6 @@
+function y = ex1(x,c) %#codegen
+coder.extrinsic('mysolve');
+x0 = x;
+y1 = zeros(size(x0));
+y1 = mysolve(x0,c);
+y = y1;
